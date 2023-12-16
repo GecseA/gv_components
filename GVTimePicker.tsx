@@ -1,5 +1,5 @@
 import {FieldProps, getIn, useFormikContext} from "formik";
-import {TimePicker, TimeValidationError} from "@mui/x-date-pickers";
+import {TimePicker} from "@mui/x-date-pickers";
 import React from "react";
 
 export function GVTimePicker({field, form: {errors, touched, isSubmitting}, ...props}: FieldProps) {

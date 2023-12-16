@@ -2,7 +2,7 @@ import React from "react";
 import {getIn} from "formik";
 import Box from "@mui/material/Box";
 import {CheckboxProps} from "formik-mui";
-import {Checkbox, FormControlLabel, InputLabel} from "@mui/material";
+import {Checkbox, FormControlLabel} from "@mui/material";
 
 interface GVCheckboxProps extends CheckboxProps {
     label: string

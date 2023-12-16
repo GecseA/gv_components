@@ -7,10 +7,10 @@ export function GVDateTimePicker({field, form: {errors, touched, isSubmitting}, 
     const {setFieldValue} = useFormikContext();
     return <DateTimePicker ampm={false}
                            ampmInClock={false}
-                           value={field.value}
+                           value={Date.parse(field.value)}
                            format={"yyyy-MM-dd HH:mm:ss"}
                            {...props}
-                           slotProps={{ textField:{size:"small", sx:{width: '200px'}, helperText: getIn(errors, field.name)  }}}
+                           slotProps={{ textField:{size:"small", sx:{width: '220px', margin: "5px"}, helperText: getIn(errors, field.name)  }}}
                            onChange={(value) => setFieldValue(field.name, value)}
                            disabled={isSubmitting}
     />
